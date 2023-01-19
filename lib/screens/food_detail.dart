@@ -48,6 +48,77 @@ class _FoodDetailsState extends State<FoodDetails> {
             ],
           ),
           Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+            child: Container(
+              height: 100,
+              width: double.infinity,
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        image: DecorationImage(
+                          image: AssetImage(foods[3].imageUrl),
+                          fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 10.0,
+                            offset: Offset(0.0, 4.0),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        image: DecorationImage(
+                          image: AssetImage(foods[4].imageUrl),
+                          fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 10.0,
+                            offset: Offset(0.0, 4.0),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0),
+                        image: DecorationImage(
+                          image: AssetImage(foods[5].imageUrl),
+                          fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 10.0,
+                            offset: Offset(0.0, 4.0),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
             padding: const EdgeInsets.only(left: 20.0),
             child: Text(
               'lunch & dinner / monthly Dinner',
@@ -55,6 +126,42 @@ class _FoodDetailsState extends State<FoodDetails> {
                 color: Color(0xFF707070),
                 fontSize: 16.0,
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 15.0),
+            child: Text(
+              'Monthly Dinner',
+              style: TextStyle(
+                color: Color(0xFF404040),
+                fontWeight: FontWeight.bold,
+                fontSize: 25.0,
+                letterSpacing: 1.1,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 15.0),
+            child: Text(
+              '\$1.399.00 & 1.000.00',
+              style: TextStyle(
+                color: Color(0xFF707070),
+                fontSize: 16.0,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 15.0),
+            child: Text(
+              'Only For Bhubaneswar, odisha, india',
+              style: TextStyle(fontSize: 16.0, color: Color(0xFF707070)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, top: 15.0),
+            child: Text(
+              'contact us for more information : +20 01286150179',
+              style: TextStyle(fontSize: 16.0, color: Color(0xFF707070)),
             ),
           ),
           Padding(
